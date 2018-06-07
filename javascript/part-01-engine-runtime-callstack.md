@@ -1,5 +1,6 @@
 ## javascript是如何工作的：引擎、运行时和调用栈的概述
-> 原文： [[How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)]([How JavaScript works: an overview of the engine, the runtime, and the call stack)
+
+> 原文： [How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
 
 随着 JavaScript 的越来越流行，促使团队在多个栈上都需要它支持 - 前端、后端、混合应用程序、嵌入式设备等等。
 
