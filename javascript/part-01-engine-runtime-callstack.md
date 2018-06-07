@@ -1,5 +1,5 @@
-# javascript是如何工作的：引擎、运行时和调用栈的概述
-> 原文： [[How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)]([How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf))
+## javascript是如何工作的：引擎、运行时和调用栈的概述
+> 原文： [[How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)]([How JavaScript works: an overview of the engine, the runtime, and the call stack)
 
 随着 JavaScript 的越来越流行，促使团队在多个栈上都需要它支持 - 前端、后端、混合应用程序、嵌入式设备等等。
 
@@ -15,7 +15,7 @@
 
 事实证明， 很多开发者每天都在使用 JavaScript，但是并不知道它们内部发生了什么。
 
-## 概述
+### 概述
 几乎每个人都已经听说过V8引擎的概念，并且很多人知道 JavaScript 是单线程的或者它是使用回调队列的。
 
 在这篇文章中，我们将会详细讲述所有的概念，并且解释 JavaScript 是如何真正运行的。在知道这些字节之后，你将会适当的利用提供的APIS写出更好的，非阻塞的应用程序。
@@ -24,7 +24,7 @@
 
 如果你是一个有经验的 JavaScript 开发者，希望它可以让你对每天都在使用的 JavaScript 运行时是如何真正关注的有一些新的理解。
 
-## JavaScript 引擎
+### JavaScript 引擎
 
 最流行的 JavaScript 引擎的例子是谷歌的 V8 引擎。V8被用于 Chrome 和 Node.js 内部。下面是一个简单的视图示例：
 ![](https://cdn-images-1.medium.com/max/800/1*OnH_DlbNAPvB9KLxUCyMsA.png)
@@ -34,7 +34,7 @@
 * 调用栈 — 这是代码执行的栈
 
 
-## 运行时
+### 运行时
 有很多浏览器的APIS被 JavaScript  开发者使用过（例如：setTimeout）。然而这些APIS，并不是引擎提供的。
 
 那么，他们从哪里来？
@@ -47,7 +47,7 @@
 
 接下来，我们有非常流行的 **event loop** 和 **callback queue**。
 
-## 调用栈
+### 调用栈
 
 JavaScript 是一个单线程编程语言，这意味着它指引一个单一的调用栈。因此在同一时间它只能做一件事情。
 
@@ -108,7 +108,7 @@ foo();
 
 同样在单线程中运行比较容易受到限制。由于 JavaScript 有一个单线程调用栈，** 当运行变得缓慢的时候发生了什么？**
 
-## 并发 & 事件循环
+### 并发 & 事件循环
 当你在调用栈中，有函数调用需要花费大量的时间才能够被处理，它到底发生了什么？例如，想象下你需要在浏览器中使用 JavaScript 进行复杂图片的转换。
 
 你可能会问 — 为什么这会是一个问题？问题是调用栈有函数在运行，浏览器实际不能做任何事情 — 它被阻塞了。这意味着浏览器不能渲染，它不能运行任何代码，它挂了。如果你希望你的app有一个流畅的UI那么问题就产生了。
