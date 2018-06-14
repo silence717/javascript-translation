@@ -1,6 +1,6 @@
 # Angular 1.x 编码风格 (TypeScript)
 
-> 原文地址：[AngularJS styleguide (ES2015)](https://github.com/toddmotto/angularjs-styleguide/blob/master/typescript/README.md)
+> 原文地址：[Angular 1.x styleguide (TypeScript)](https://github.com/toddmotto/angularjs-styleguide/blob/master/typescript/README.md)
 
 ### 架构，文件结构，组件，单向数据流以及最佳实践
 
