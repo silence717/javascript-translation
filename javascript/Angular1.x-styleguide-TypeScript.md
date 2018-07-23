@@ -145,8 +145,6 @@ export const CommonModule = angular
 
 ### Low-level modules
 
- Always remember to add the `.name` suffix to each `export` when creating a _new_ module, not when referencing one. You'll noticed routing definitions also exist here, we'll come onto this in later chapters in this guide.
-
 低级别的模块是包含每个功能块逻辑的独立组件。每个模块都将定义成一个可以被导入较高级别的单独模块，例如一个组件或者公共模块，如下所示。 。一定要记住每次创建一个新的模块，而非引用的时候，记得给每个`export`中添加`.name`的后缀。你会注意到路由定义也在这里，我们将在随后的部分讲到它。
 
 ```ts
@@ -613,8 +611,6 @@ export const TodoModule = angular
 
 ### Recommended properties
 
-Due to the fact directives support most of what `.component()` does (template directives were the original component), I'm recommending limiting your directive Object definitions to only these properties, to avoid using directives incorrectly:
-
 由于指令实际上支持了大多数 `.component()` 的语法 (模板指令就是最原始的组件), 我建议将指令对象定义限制在这些属性上，去避免错误的使用指令：
 
 | Property | Use it? | Why |
@@ -755,8 +751,6 @@ export const todo = angular
 # Styles
 
 利用[Webpack](https://webpack.github.io/) 我们现在可以在 `*.module.js` 中的 `.scss`文件上使用`import` 语句，让 Webpack 知道在我们的样式中包含这样的文件。 这样做可以使我们的组件在功能和样式上保持分离，它还与Angular2中使用样式的方式更加贴近。这样做不会让样式像Angular2一样隔离在某个组件上，样式还可以广泛应用到我们的应用程序上，但是它更加易于管理，并且使得我们的应用结构更加易于推理。
-
-If you have some variables or globally used styles like form input elements then these files should still be placed into the root `scss` folder. e.g. `scss/_forms.scss`. These global styles can the be `@imported` into your root module (`app.module.js`) stylesheet like you would normally do.
 
 如果你有一些变量或者全局使用的样式，像表单的input元素，那么这些文件应该放在根`scss`文件夹。例如`scss/_forms.scss`。这些全局的样式可以像通常意义被`@imported`到根模块(`app.module.ts`)。
 
