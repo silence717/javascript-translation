@@ -128,7 +128,7 @@ foo();
 
 使用 SessionStack ，你可以重现在你的web应用中的一切问题就像视频一样，并且可以看到你的用户交互信息。
 
-这里有一个免费的计划，不需要信用卡。[现在开始就开始吧]([Record and Reproduce Errors in JavaScript Apps | SessionStack](https://www.sessionstack.com/?utm_source=medium&utm_medium=blog&utm_content=Post-1-overview-getStarted))。
+这里有一个免费的计划，不需要信用卡。[现在开始就开始吧]([Record and Reproduce Errors in JavaScript Apps | SessionStack](https://www.sessionstack.com/?utm_source=medium&utm_medium=blog&utm_content=Post-1-overview-getStarted)。
 
 ![](https://cdn-images-1.medium.com/max/800/1*kEQmoMuNBDfZKNSBh0tvRA.png)
 
