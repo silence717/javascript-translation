@@ -10,7 +10,7 @@
 
 ![](https://cdn-images-1.medium.com/max/800/1*Zf4reZZJ9DCKsXf5CSXghg.png)
 
-([获取最新的GitHub language stats]([GitHut 2.0](https://madnight.github.io/githut/#/pull_requests/2018/1)))
+[获取最新的GitHub language stats]([GitHut 2.0](https://madnight.github.io/githut/#/pull_requests/2018/1))
 
 如果项目越来越多的依赖  JavaScript，这意味着开发者为了构建一个令人惊叹的软件，必须利用语言提供的一切，并且对于生态系统内部有着深入的理解。
 
